@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="122dp">
+
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="69dp"
+            android:layout_height="30dp"
+            android:layout_margin="16dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="220dp"
+            android:layout_marginRight="220dp"
+            android:gravity="center"
+            android:text="Username" />
+
+        <Button
+            android:id="@+id/signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@+id/user_name"
+            android:text="@string/btn_sign_out" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_data"
+        android:layout_width="match_parent"
+        android:layout_height="749dp" />
+
+    <ProgressBar
+        android:id="@+id/details_progressBar"
+        android:layout_width="75dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center|bottom"
+        android:visibility="gone"
+         />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

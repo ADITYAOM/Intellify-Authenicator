@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "441142041108",
+    "project_id": "intellifyauthenticator",
+    "storage_bucket": "intellifyauthenticator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441142041108:android:55b25a1dc5149284aee501",
+        "android_client_info": {
+          "package_name": "com.aditya.intellify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441142041108-1ugqmftstlldmdfvucf5700cqrtnlv7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsqU3My8lO2Iwyn-1yD2Mdzu5793nrzoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441142041108-1ugqmftstlldmdfvucf5700cqrtnlv7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
