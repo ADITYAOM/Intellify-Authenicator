@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Details">
+    tools:context=".Details"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="122dp">
+        tools:layout_editor_absoluteY="122dp"
+        android:orientation="horizontal">
 
 
         <TextView
@@ -23,7 +24,7 @@
             android:layout_marginEnd="220dp"
             android:layout_marginRight="220dp"
             android:gravity="center"
-            android:text="Username" />
+            android:text="@string/username" />
 
         <Button
             android:id="@+id/signout"
@@ -32,7 +33,6 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:layout_toRightOf="@+id/user_name"
             android:text="@string/btn_sign_out" />
 
 
@@ -41,7 +41,37 @@
     <ListView
         android:id="@+id/lv_data"
         android:layout_width="match_parent"
-        android:layout_height="749dp" />
+        android:layout_height="749dp"
+        >
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first"
+            android:text="@string/name"
+        />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/second"
+            android:text="@string/gender"
+        />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/third"
+            android:text="@string/city"
+           />
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fourth"
+            android:text="@string/age"
+        />
+    </ListView>
+
 
     <ProgressBar
         android:id="@+id/details_progressBar"
@@ -51,4 +81,4 @@
         android:visibility="gone"
          />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>
